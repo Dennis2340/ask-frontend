@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ReactQueryProvider } from "./react-query-provider";
+import { ClusterProvider } from "@/components/cluster/cluster-data-access";
+import { SolanaProvider } from "@/components/solana/solana-provider";
+import { UiLayout } from "@/components/ui-layout";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ReactQueryProvider>
+          <ClusterProvider>
+            <SolanaProvider>
+              <Navbar/>
+               {children}
+           </SolanaProvider>
+          </ClusterProvider>
+        </ReactQueryProvider>
+      </body>
     </html>
   );
 }
