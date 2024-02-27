@@ -1,4 +1,4 @@
-import LoginForm from '@/components/LoginForm'
+import SignupForm from '@/components/SignupForm'
 import React from 'react'
 
 interface Props {}
@@ -6,7 +6,7 @@ interface Props {}
 const page = () => {
   return (
     <div>
-        <LoginForm/>
+        <SignupForm/>
     </div>
   )
 }

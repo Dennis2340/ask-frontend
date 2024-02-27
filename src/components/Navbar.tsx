@@ -3,6 +3,8 @@ import MaxWidthWrapper from './MaxWidthWrapper'
 import Image from 'next/image'
 import Link from 'next/link'
 import { WalletButton } from './solana/solana-provider'
+import MenubarComp from './MenubarComp'
+import UserAccountNav from './UserAccountNav'
 interface Props {}
 
 const Navbar = () => {
@@ -10,7 +12,8 @@ const Navbar = () => {
     <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
         <MaxWidthWrapper>
             <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
-                
+
+              <div className='sm:block'><MenubarComp/></div>
                    {/* Logo */}
           <div className='flex items-center space-x-2'>
             <Image
@@ -28,6 +31,7 @@ const Navbar = () => {
           <div className='bg-purple-500 rounded'>
             <WalletButton />
           </div>
+            <div className='sm:hidden'><UserAccountNav/></div>
             </div>
         </MaxWidthWrapper>
     </nav>
