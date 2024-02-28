@@ -21,16 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ReactQueryProvider>
-          <ClusterProvider>
-            <SolanaProvider>
-              <Navbar/>
-               {children}
-           </SolanaProvider>
-          </ClusterProvider>
-        </ReactQueryProvider>
-      </body>
+      <ReactQueryProvider>
+        <body className={inter.className}>
+            <ClusterProvider>
+              <SolanaProvider>
+                <Navbar/>
+                {children}
+            </SolanaProvider>
+            </ClusterProvider>
+        </body>
+      </ReactQueryProvider>
     </html>
   );
 }

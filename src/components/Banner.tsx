@@ -8,7 +8,7 @@ interface Props {}
 const Banner = () => {
   return (
     <Card className='bg-purple-300 mt-7 h-[200px]'>
-        <CardTitle className='mt-4 ml-3'> Ask,Learn,Earn</CardTitle>
+        <CardTitle className='mt-4 ml-3'> Ask Learn Earn</CardTitle>
         <CardContent>
 
         </CardContent>

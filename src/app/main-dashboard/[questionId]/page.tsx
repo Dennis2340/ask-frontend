@@ -2,6 +2,7 @@ import DisplayAnswerComp from '@/components/DisplayAnswerComp'
 import DisplayDetailedQuestion from '@/components/DisplayDetailedQuestion'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import PostYourAnswerComp from '@/components/PostYourAnswerComp'
+import QuickResponseModal from '@/components/QuickResponseModal'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
@@ -12,7 +13,9 @@ const Page = () => {
     <MaxWidthWrapper>
         <div className='flex justify-between mt-3'>
             <h5 className='text-2xl'>Question</h5>
-            <Button size='sm' className='bg-gray-300 text-black hover:text-white'>quick response</Button>
+            <div className='w-auto h-auto '>
+              <QuickResponseModal/>
+            </div>
         </div>
         <div className='mt-3'>
             <DisplayDetailedQuestion/>
