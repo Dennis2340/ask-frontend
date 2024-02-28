@@ -1,17 +1,17 @@
 "use client"
 import React, { useRef, useState } from 'react'
-import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import { Card, CardContent } from '@/components/ui/card'
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import MaxWidthWrapper from '../../components/MaxWidthWrapper'
+import { Card, CardContent } from '../../components/ui/card'
+import { Input } from "../../components/ui/input"
+import { Label } from "../../components/ui/label"
 import { Editor } from '@tinymce/tinymce-react';
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { Plus } from 'lucide-react'
 import { useWallet } from '@solana/wallet-adapter-react'
-import { useToast  } from '@/components/ui/use-toast'
+import { useToast  } from '../../components/ui/use-toast'
 import { useRouter } from 'next/navigation'
 import { useMutation } from 'react-query'
-import { createQuestion } from '@/lib/api'
+import { createQuestion } from '../../lib/api'
 
 interface Props {}
 

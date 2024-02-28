@@ -7,10 +7,10 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
+} from "../components/ui/dialog"
+import { Input } from "../components/ui/input"
+import { Label } from "../components/ui/label"
+import { Button } from "../components/ui/button"
 import DisplayDetailedQuestion from './DisplayDetailedQuestion'
 import QuickResponseCard from './QuickResponseCard'
 

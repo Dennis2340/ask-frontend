@@ -9,7 +9,7 @@ import {
 import { Button, buttonVariants } from './ui/button'
 import Link from 'next/link'
 import { Timer } from 'lucide-react'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar"
 
 
 export interface QuestionProps {

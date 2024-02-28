@@ -1,11 +1,11 @@
 "use client"
 import React, { useRef } from 'react'
-import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import { Card, CardContent } from '@/components/ui/card'
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import MaxWidthWrapper from '../components/MaxWidthWrapper'
+import { Card, CardContent } from '../components/ui/card'
+import { Input } from "../components/ui/input"
+import { Label } from "../components/ui/label"
 import { Editor } from '@tinymce/tinymce-react';
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { Plus } from 'lucide-react'
 interface Props {}
 

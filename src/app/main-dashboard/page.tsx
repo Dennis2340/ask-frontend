@@ -1,8 +1,9 @@
-import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import QuestionDisplayComp from '@/components/QuestionDisplayComp'
+import MaxWidthWrapper from '../../components/MaxWidthWrapper'
+import QuestionDisplayComp from '../../components/QuestionDisplayComp'
 import React from 'react'
-import { QuestionProps } from '@/components/QuestionDisplayComp'
-import Banner from '@/components/Banner'
+import { QuestionProps } from '../../components/QuestionDisplayComp'
+import Banner from '../../components/Banner'
+
 interface Props {}
 
 type QuestionsProps = {
@@ -40,6 +41,7 @@ const demoQuestions: QuestionProps[] = [
 ];
 
 const page = () => {
+
   return (
     <MaxWidthWrapper>
         <Banner/>
