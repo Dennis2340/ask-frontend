@@ -23,6 +23,24 @@ const demoQuestions: QuestionProps[] = [
     {
         question: {
             userId: "1234",
+            questionTitle: "This is the title 1 of the question",
+            questionBody: "This is the body of question 1",
+            answersId: ["12345", ""],
+            tags: ["python", "code", "love"]
+        }
+    },
+    {
+        question: {
+            userId: "1234",
+            questionTitle: "This is the title 1 of the question",
+            questionBody: "This is the body of question 1",
+            answersId: ["12345", ""],
+            tags: ["python", "code", "love"]
+        }
+    },
+    {
+        question: {
+            userId: "1234",
             questionTitle: "This is the title 2 of the question",
             questionBody: "This is the body of question 2",
             answersId: ["12345", ""],

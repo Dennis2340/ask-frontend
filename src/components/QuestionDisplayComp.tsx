@@ -26,7 +26,7 @@ type QuestionsProps = QuestionProps[]
 
 const QuestionDisplayComp: React.FC<QuestionProps> = ({question}) => {
   return (
-            <Card className=" md:w-[300px] lg:w-[400px] mb-10">
+            <Card className=" md:w-[300px] lg:w-[400px] xl:w-[500px] mb-10">
                 <CardHeader className='flex flex-row gap-3'>
                     <Avatar>
                         <AvatarImage src=''/>

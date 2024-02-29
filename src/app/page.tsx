@@ -2,8 +2,9 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { buttonVariants, Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { BoomBoxIcon, Inbox, Laptop, Smile, SmileIcon } from "lucide-react";
+import { BoomBoxIcon, Building, Inbox, Laptop, Mail, Phone, Smile, SmileIcon, Timer } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
  
@@ -113,39 +114,40 @@ export default function Home() {
          <div className="mt-10">
             <Card className="shadow-lg shadow-purple-400">
               <CardHeader>
-                <h3 className="text-2xl">Contact Us</h3>
+                <h3 className="text-2xl"><strong>Contact Us</strong></h3>
               </CardHeader>
+              <div className="flex space-x-2">
               <CardContent>
+                <div className="flex flex-col justify-center">
                 <div className="flex items-center space-x-4 mb-4">
-                  <Inbox className="w-6 h-6 text-purple-500" />
+                  <Mail className="w-6 h-6 text-purple-500" />
                   <p className="text-gray-700">askii@gmail.com</p>
                 </div>
                 <div className="flex items-center space-x-4 mb-4">
-                  <Inbox className="w-6 h-6 text-purple-500" />
-                  <p className="text-gray-700">askii@gmail.com</p>
+                  <Phone className="w-6 h-6 text-purple-500" />
+                  <p className="text-gray-700">+23232659254</p>
                 </div>
                 <div className="flex items-center space-x-4 mb-4">
-                  <Inbox className="w-6 h-6 text-purple-500" />
-                  <p className="text-gray-700">askii@gmail.com</p>
+                  <Building className="w-6 h-6 text-purple-500" />
+                  <p className="text-gray-700">Christex Foundation Lower faculty, opposite law building, FBC</p>
                 </div>
                 <div className="flex items-center space-x-4 mb-4">
-                  <Inbox className="w-6 h-6 text-purple-500" />
-                  <p className="text-gray-700">askii@gmail.com</p>
+                  <Timer className="w-6 h-6 text-purple-500" />
+                  <p className="text-gray-700">9:00am to 5:00pm</p>
+                </div>
                 </div>
               </CardContent>
               <CardFooter>
-                <div className="space-y-4">
-                  <Input className="w-full" placeholder="Your Name" />
-                  <Input className="w-full" placeholder="Your Email" />
-                  <Textarea className="w-full" placeholder="Your Message" />
-                  <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Send Message</Button>
+                <div className="flex-col justify-center w-full space-y-4">
+                  <Input className="w-full" placeholder="Enter Name..." />
+                  <Input className="w-full" placeholder="Enter Email..." />
+                  <Textarea className="w-full" placeholder="Type Message..." />
+                  <Button className="w-full bg-gray-400 hover:bg-purple-600 text-white">Send Message</Button>
                 </div>
               </CardFooter>
+              </div>
             </Card>
           </div>
-
-           
-    
       </MaxWidthWrapper>
     </main>
   );
